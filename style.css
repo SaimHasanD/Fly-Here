@@ -63,7 +63,7 @@ nav ul li a:hover, a.active{
     align-items: center;
 }
 .inp-width{
-    min-width: 300px;
+    min-width: 310px;
 }
 .btn{
     background-color: #F3F5FF;
@@ -71,6 +71,10 @@ nav ul li a:hover, a.active{
     width: 35px;
     margin-top: 20px;
     border: 0;
+    font-size: large;
+}
+.btn:hover{
+    background-color: lightcyan;
 }
 .booking-form  .calculations{
     margin: 10px 0;
@@ -119,4 +123,9 @@ nav ul li a:hover, a.active{
 .amount{
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 1200px){
+    .inp-width{
+        min-width: 250PX;
+    }
 }
