@@ -10,6 +10,7 @@ function handleNumberChange(ticket, isIncrease) {
         totalTicket = newTicket - 1;
     }
     document.getElementById(ticket + 'Input').value = totalTicket;
+    
     calculateTotal();
 }
 
@@ -38,7 +39,6 @@ function getTicketNumber(ticket) {
 // Confirming ticket with alert.
 function confirmTicket() {
     const totalCost = document.getElementById('totalCost').innerText;
-    // const totalCost = ;
     if (totalCost > '$'+0) {
         alert('We confirm your ticket. We wish you a happy journey. Stay with us, Thank you.');
     } else {
