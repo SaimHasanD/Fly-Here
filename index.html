@@ -54,8 +54,8 @@
                     <input id="firstClassInput" class="inp-style inp-width" type="number" value="1" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="handleNumberChange(true)" >+</button>
-                    <button onclick="handleNumberChange(false)" >-</button>
+                    <button onclick="handleNumberChange('firstClass', false)" >-</button>
+                    <button onclick="handleNumberChange('firstClass', true)" >+</button>
                 </div>
             </div>
             
@@ -65,8 +65,8 @@
                     <input id="economyInput" class="inp-style inp-width" type="number" value="1" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="handleNumberChange(true)" >+</button>
-                    <button onclick="handleNumberChange(false)" >-</button>
+                    <button onclick="handleNumberChange('economy', false)" >-</button>
+                    <button onclick="handleNumberChange('economy', true)" >+</button>
                 </div>
             </div>
             <div class="calculations">
@@ -75,7 +75,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$250</p>
+                        <p id="subTotal" >$250</p>
                     </div>
                 </div>
 
@@ -84,7 +84,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$25</p>
+                        <p id="vat" >$25</p>
                     </div>
                 </div>
                 <hr>
@@ -93,7 +93,7 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$275</p>
+                        <p id="totalCost" >$275</p>
                     </div>
                 </div>
             </div>
